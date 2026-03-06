@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 200" width="860" height="200" font-family="'Courier New', monospace">
+  <!-- Background -->
+  <rect width="860" height="200" fill="#0d1117" rx="12"/>
+
+  <!-- Grid lines subtle -->
+  <line x1="0" y1="100" x2="860" y2="100" stroke="#1e2a3a" stroke-width="1" stroke-dasharray="4,8"/>
+
+  <!-- Step 1: IMU Sensors -->
+  <rect x="20" y="60" width="120" height="80" rx="8" fill="#0f2027" stroke="#00d4ff" stroke-width="1.5"/>
+  <text x="80" y="88" fill="#00d4ff" font-size="9" font-weight="bold" text-anchor="middle" letter-spacing="1">IMU SENSORS</text>
+  <text x="80" y="106" fill="#4a9eba" font-size="8" text-anchor="middle">tilt_x / tilt_y</text>
+  <text x="80" y="120" fill="#4a9eba" font-size="8" text-anchor="middle">angular_velocity</text>
+  <!-- Sensor dots -->
+  <circle cx="57" cy="134" r="3" fill="#00d4ff" opacity="0.6"/>
+  <circle cx="80" cy="134" r="3" fill="#00d4ff" opacity="0.8"/>
+  <circle cx="103" cy="134" r="3" fill="#00d4ff" opacity="0.6"/>
+
+  <!-- Arrow 1 -->
+  <line x1="142" y1="100" x2="168" y2="100" stroke="#00d4ff" stroke-width="1.5"/>
+  <polygon points="168,95 178,100 168,105" fill="#00d4ff"/>
+
+  <!-- Step 2: Data Processing -->
+  <rect x="180" y="60" width="120" height="80" rx="8" fill="#0f2027" stroke="#38b2ac" stroke-width="1.5"/>
+  <text x="240" y="88" fill="#38b2ac" font-size="9" font-weight="bold" text-anchor="middle" letter-spacing="1">DATA PIPELINE</text>
+  <text x="240" y="106" fill="#4a9eba" font-size="8" text-anchor="middle">Synthetic Gen</text>
+  <text x="240" y="120" fill="#4a9eba" font-size="8" text-anchor="middle">Rule Labeling</text>
+  <!-- CSV icon -->
+  <rect x="224" y="128" width="32" height="10" rx="2" fill="#1a3a3a" stroke="#38b2ac" stroke-width="1"/>
+  <text x="240" y="136" fill="#38b2ac" font-size="7" text-anchor="middle">.csv</text>
+
+  <!-- Arrow 2 -->
+  <line x1="302" y1="100" x2="328" y2="100" stroke="#38b2ac" stroke-width="1.5"/>
+  <polygon points="328,95 338,100 328,105" fill="#38b2ac"/>
+
+  <!-- Step 3: ML Model -->
+  <rect x="340" y="60" width="120" height="80" rx="8" fill="#0f2027" stroke="#9f7aea" stroke-width="1.5"/>
+  <text x="400" y="88" fill="#9f7aea" font-size="9" font-weight="bold" text-anchor="middle" letter-spacing="1">ML MODEL</text>
+  <text x="400" y="106" fill="#4a9eba" font-size="8" text-anchor="middle">RandomForest</text>
+  <text x="400" y="120" fill="#4a9eba" font-size="8" text-anchor="middle">Classifier</text>
+  <!-- Brain/tree icon -->
+  <circle cx="390" cy="136" r="5" fill="none" stroke="#9f7aea" stroke-width="1"/>
+  <line x1="390" y1="131" x2="390" y2="126" stroke="#9f7aea" stroke-width="1"/>
+  <line x1="385" y1="133" x2="380" y2="130" stroke="#9f7aea" stroke-width="1"/>
+  <line x1="395" y1="133" x2="400" y2="130" stroke="#9f7aea" stroke-width="1"/>
+  <text x="410" y="139" fill="#9f7aea" font-size="7" text-anchor="middle">.joblib</text>
+
+  <!-- Arrow 3 -->
+  <line x1="462" y1="100" x2="488" y2="100" stroke="#9f7aea" stroke-width="1.5"/>
+  <polygon points="488,95 498,100 488,105" fill="#9f7aea"/>
+
+  <!-- Step 4: Inference -->
+  <rect x="500" y="60" width="120" height="80" rx="8" fill="#0f2027" stroke="#f6ad55" stroke-width="1.5"/>
+  <text x="560" y="88" fill="#f6ad55" font-size="9" font-weight="bold" text-anchor="middle" letter-spacing="1">INFERENCE</text>
+  <text x="560" y="106" fill="#4a9eba" font-size="8" text-anchor="middle">Real-Time Sim</text>
+  <text x="560" y="120" fill="#4a9eba" font-size="8" text-anchor="middle">Prediction Loop</text>
+  <!-- Status indicators -->
+  <circle cx="544" cy="134" r="4" fill="#48bb78"/>
+  <text x="551" y="137" fill="#48bb78" font-size="7">STABLE</text>
+  <circle cx="544" cy="144" r="4" fill="#fc8181"/>
+  <text x="551" y="147" fill="#fc8181" font-size="7">UNSTABLE</text>
+
+  <!-- Arrow 4 -->
+  <line x1="622" y1="100" x2="648" y2="100" stroke="#f6ad55" stroke-width="1.5"/>
+  <polygon points="648,95 658,100 648,105" fill="#f6ad55"/>
+
+  <!-- Step 5: API -->
+  <rect x="660" y="60" width="180" height="80" rx="8" fill="#0f2027" stroke="#68d391" stroke-width="1.5"/>
+  <text x="750" y="88" fill="#68d391" font-size="9" font-weight="bold" text-anchor="middle" letter-spacing="1">REST API</text>
+  <text x="750" y="103" fill="#4a9eba" font-size="8" text-anchor="middle">FastAPI · POST /predict</text>
+  <!-- URL -->
+  <rect x="675" y="110" width="150" height="12" rx="3" fill="#0a1a14" stroke="#2d5a3d" stroke-width="1"/>
+  <text x="750" y="120" fill="#68d391" font-size="7.5" text-anchor="middle">127.0.0.1:8000/docs</text>
+  <!-- JSON badge -->
+  <rect x="695" y="127" width="110" height="10" rx="2" fill="#1a3a2a" stroke="#68d391" stroke-width="0.8"/>
+  <text x="750" y="135" fill="#68d391" font-size="7" text-anchor="middle">{"prediction": "stable"}</text>
+
+  <!-- Bottom label -->
+  <text x="430" y="190" fill="#2d3f55" font-size="9" text-anchor="middle" letter-spacing="2">EDGE AI STABILITY DETECTION SYSTEM · END-TO-END PIPELINE</text>
+</svg>
